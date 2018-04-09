@@ -19,8 +19,11 @@ namespace ForDevelopersDemo
             Person person = JsonConvert.DeserializeObject<Person>(requestBody);
             if (person == null || person.FirstName == null || person.LastName == null)
             {
-                return new BadRequestObjectResult("Przekaz poprawne dane osobowe");
+                return new BadRequestObjectResult("Prz222ekaz poprawne dane osobowe");
             }
+
+
+
 
             string message = person.FirstName + " " + person.LastName;
             outputMessage.Add(message);
